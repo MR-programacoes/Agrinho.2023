@@ -1,0 +1,263 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  .paragrafo span{
+    display: block;
+    opacity: 0;
+    animation: reveal 0.7s forwards var(--d);
+  }
+  
+  @keyframes reveal {
+    from { transform: translateY(20px); }
+    to { opacity: 1; transform: none; }
+  }
+  
+  .conteiner{
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: .7s;
+  }
+  
+  header.rolagem{
+    background-color: #fff;
+    padding: 20px 4%;
+  }
+  
+  header.rolagem a{
+    color: #FFA500;
+  }
+  
+  .btn-contato button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #FFA500;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+.inicio{
+    color: black;
+}
+  
+  
+  header i{
+    font-size: 30px;
+    color: white;
+  }
+  
+  header ul{
+    list-style-type: none;
+  }
+  
+  header ul li{
+    display: inline-block;
+    margin: 0 40px;
+  }
+  
+  header ul li a{
+    color: #fff;
+    text-decoration: none;
+    
+  }
+  
+  h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+    color: #000;
+  }
+  
+  .wrapper{
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  main{
+    display: block;
+    background-color: #fff;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  section.modulo p{
+    margin-bottom: 40px;
+  }
+  
+  section.modulo:last-child{
+    margin-bottom: 0;
+  }
+  
+  section.modulo h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  
+  section.modulo.content{
+    padding: 40px 0;
+    background: #dbdbdb;
+  }
+  
+  section.modulo.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  
+  section.modulo.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+  }
+  
+  
+  section.modulo.parallax-1{
+    background-image: url(https://arquitetandoestilos.com/wp-content/uploads/2017/02/Empoderamento-X-Educa%C3%A7%C3%A3o-FACE.png);
+  }
+  
+  section.modulo.parallax-2{
+    background-image: url(https://todospelaeducacao.org.br/wordpress/wp-content/uploads/2020/10/thumb-irs.jpg);
+  }
+  
+  section.modulo.parallax-3{
+    background-image: url(https://static1.purebreak.com.br/articles/0/97/68/0/@/386538-empoderamento-voce-reamente-sabe-o-que-amp_article_image-3.jpg);
+  }
+  
+  section.modulo.parallax-4{
+    background-image: url(https://cer.sebrae.com.br/wp-content/uploads/2020/12/GettyImages-1199706305.jpg);
+  }
+  
+  section.modulo.parallax h1{
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    z-index: 50;
+    text-transform: uppercase;
+  }
+  
+  .area-1, .area-2, .area-3, .area-4, .area-5, .area-6{
+    visibility: hidden;
+  }
+  
+  
+  ::-webkit-scrollbar{
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color: #FFA500;
+  }
+  
+  footer{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    background-color: #ededed;
+  }
+  
+  .footer{
+    padding: 40px 0;
+    background-color: #fff;
+  }
+  
+  .footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4d4c4d;
+  }
+  
+  .footer .social a {
+    font-size: 25px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+  }
+  
+  .footer.social a:hover{
+    opacity: 0.9;
+  }
+  
+  .footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  .footer ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  
+  .footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+  
+  .footer ul li a:hover{
+    opacity: 1;
+  }
+  
+  .footer .Copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+  }
+
+
+ 

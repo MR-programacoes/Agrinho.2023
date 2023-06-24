@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contato</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<header>
+       <div class="logo">Agrinho Programação</div>
+        <div class="hamburguer">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+
+		<div class="nav-bar">
+			<ul>
+				<li>
+					<a href="Index.html">Início</a>
+				</li>
+				<li>
+					<a href="termos.html">Termos</a>
+				</li>
+				<li>
+					<a href="contato.html" class="active">Contato</a>
+				</li>
+			</ul>
+		</div>
+    </header>
+	
+
+	<div class="contact1">
+		<div class="container-contact1">
+			<div class="contact1-pic js-tilt" data-tilt>
+				<img src="images/img-01.png" alt="IMG">
+			</div>
+
+			<form class="contact1-form validate-form" action="https://api.staticforms.xyz/submit" method="post">
+				<span class="contact1-form-title">
+					Entre em Contato caso tenha visto um bug.
+				</span>
+
+				<div class="wrap-input1 validate-input" data-validate = "Nome é requirido">
+					<input class="input1" type="text" name="name" placeholder="Nome">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Um email válido é requirido: ex@abc.xyz">
+					<input class="input1" type="text" name="email" placeholder="Email">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Assunto é requirido">
+					<input class="input1" type="text" name="subject" placeholder="Assunto">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Mensagem é requirida">
+					<textarea class="input1" name="message" placeholder="Mensagem"></textarea>
+					<span class="shadow-input1"></span>
+				</div>
+
+
+
+				<button class="mail-btn" type="submit">Enviar</button>
+
+
+				
+
+				<input type="hidden" name="accessKey" value="edffef24-fc45-419d-a018-88deb38ab963">
+				<input type="hidden" name="redirectTo" value="https://mr-programacoes.github.io/contato.html">
+			</form>
+		</div>
+	</div>
+
+	
+
+<!--===============================================================================================-->
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+
+	<div vw class="enabled">
+		<div vw-access-button class="active"></div>
+		<div vw-plugin-wrapper>
+		  <div class="vw-plugin-top-wrapper"></div>
+		</div>
+	  </div>
+	  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+	  <script>
+		new window.VLibras.Widget('https://vlibras.gov.br/app');
+	  </script>
+
+<script>
+	
+</script>
+
+
+
+<script>
+
+	let popup = document.getElementById("popup");
+	
+	function openPopup(){
+		popup.classList.add("open-popup");
+	}
+	
+	function closePopup(){
+		popup.classList.remove("open-popup");
+	}
+	
+	</script>
+
+</body>
+</html>

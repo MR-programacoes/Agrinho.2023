@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia limpa resumida</title>
+    <link rel="stylesheet" href="energia2.css">
+    <link rel="shortcut icon" href="limpa.ico" type="image/x-icon">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="brand">Energia limpa</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="Index.html">Inicio</a>
+          <a href="acoes.html">Ações</a>
+          <a href="termos.html">Termos</a>
+          <a href="contato.html">Contato</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <video class="video-slide active" src="energia-resumo-mk2.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="solar3-teste.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="hidreletrica-video-teste.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="geotermica-video.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="biomassa-video.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="hidreletrica-video-teste.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="eolica-pequena-video-teste.mp4" autoplay muted loop></video>
+      
+      
+      <div class="content active">
+        <h1>Resumo das<br><span>Energias</span></h1>
+        <p>Aqui irei falar resumidamente sobre cada tipo de energia limpa que temos.</p>
+      </div>
+      <div class="content">
+        <h1>Energia<br><span>Solar</span></h1>
+        <p>Pode se dizer que a energia solar é a energia mais limpa que temos, pois provem do sol.</p>
+        <a href="solar.html">Ler Mais</a>
+      </div>
+      <div class="content">
+        <h1>As<br><span>Hidrelétricas.</span></h1>
+        <p>Hidrelétricas são construções que, parecem barragens, e usam a água como principal item para produção de energia.</p>
+        <a href="hidreletrica.html">Ler Mais</a>
+      </div>
+      <div class="content">
+        <h1>As<br><span>Geotérmicas.</span></h1>
+        <p>Geotérmicas são usinas que utilizam a temperatura da terra como principal fonte de produção de energia.</p>
+        <a href="geotermica.html">Ler Mais</a>
+      </div>
+      <div class="content">
+        <h1>A<br><span>Biomassa.</span></h1>
+        <p>As usinas de biomassa, utilizam como principal item de fonte de energia, diversos item de residuos orgâncos.</p>
+        <a href="biomasssa.html">Ler Mais</a>
+      </div>
+      <div class="content">
+        <h1>A<br><span>Maremotriz.</span></h1>
+        <p>A maremotriz utiliza a maré como principal fonte de produção de energia. <br><strong>Obs:Não achei o vídeo da maremotriz</strong></p>
+        <a href="maremotriz.html">Ler Mais</a>
+      </div>
+      <div class="content">
+        <h1>A<br><span>Eólica.</span></h1>
+        <p>A usina eólica utiliza os ventos como principal fonte de produção de energia.</p>
+        <a href="eolica.html">Ler Mais</a>
+      </div>
+      
+      <div class="media-icons">
+        <a href="https://github.com/MR-programacoes"><i class="fab fa-github"></i></a>
+      </div>
+      
+      
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+    </script>
+
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  </body>
+</html>
+    

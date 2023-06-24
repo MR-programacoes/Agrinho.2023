@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,200;1,800&display=swap');
+
+.body{
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: 'Raleway', sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    
+  }
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.conteiner{
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    transition: .7s;
+  }
+  
+header.rolagem{
+    background-color: #fff;
+    padding: 20px 4%;
+  }
+  
+header.rolagem a{
+    color: #0087ca;
+  }
+  
+.btn-contato button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #0087ca;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  
+header i{
+    font-size: 30px;
+    color: #fff;
+  }
+  
+header ul{
+    list-style-type: none;
+  }
+  
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+  }
+  
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    
+  }
+
+  .container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+
+  h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+    color: #000;
+  }
+  
+  .wrapper{
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  main{
+    display: block;
+    background-color: #fff;
+  }
+  
+  .container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  section.modulo p{
+    margin-bottom: 40px;
+  }
+  
+  section.modulo:last-child{
+    margin-bottom: 0;
+  }
+  
+  section.modulo h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  
+  section.modulo.content{
+    padding: 40px 0;
+    background: #dbdbdb;
+  }
+  
+  section.modulo.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  
+  section.modulo.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+  }
+  
+  
+  section.modulo.parallax-1{
+    background-image: url(https://www.tendaatacado.com.br/dicas/wp-content/uploads/2021/12/fontes-de-energias-renovaveis-topo.jpg);
+  }
+  
+  section.modulo.parallax-2{
+    background-image: url(https://faespsenar.com.br/wp-content/uploads/2022/04/Energia-Solar-BANNER.jpg);
+  }
+  
+  section.modulo.parallax-3{
+    background-image: url(https://clickpetroleoegas.com.br/wp-content/uploads/2020/09/itaipu.jpg);
+  }
+  
+  section.modulo.parallax-4{
+    background-image: url(https://i0.wp.com/jornal.usp.br/wp-content/uploads/2023/02/20220203_geotermica.jpg?fit=1200%2C630&ssl=1);
+  }
+
+  section.modulo.parallax-5{
+    background-image: url(https://blog.coontrol.com.br/wp-content/uploads/2021/12/caldeira-a-biomassa-e-a-cogeracao-de-energia.png);
+  }
+
+  section.modulo.parallax-6{
+    background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/09/Usina-de-Ondas-Pecem.jpg?w=1200&h=900&crop=1);
+  }
+
+  section.modulo.parallax-7{
+    background-image: url(https://i0.wp.com/blog.cicloorganico.com.br/wp-content/uploads/2023/01/sh-energia-eolica-759730900.jpg?fit=1000%2C667);
+  }
+  
+  section.modulo.parallax h1{
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    z-index: 50;
+    text-transform: uppercase;
+  }
+  
+  .area-1, .area-2, .area-3, .area-4, .area-5, .area-6{
+    visibility: hidden;
+  }
+
+
+
+  ::-webkit-scrollbar{
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color: #0087ca;
+  }
+  
+  footer{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    background-color: #ededed;
+  }
+  
+  .footer{
+    padding: 40px 0;
+    background-color: #fff;
+  }
+  
+  .footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4d4c4d;
+  }
+  
+  .footer .social a {
+    font-size: 25px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+  }
+  
+  .footer.social a:hover{
+    opacity: 0.9;
+  }
+  
+  .footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  .footer ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  
+  .footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+  
+  .footer ul li a:hover{
+    opacity: 1;
+  }
+  
+  .footer .Copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+  }

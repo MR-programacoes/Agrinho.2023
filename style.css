@@ -407,6 +407,13 @@ body {margin:0}
     width: inherit;
   
   }
+
+  .icon{
+    position: absolute;
+    text-align: right;
+    width: inherit;
+    margin-bottom: 20px;
+  }
   
     .cidadeinforight p, .cidadeinforight a {
   
@@ -421,10 +428,11 @@ body {margin:0}
     position: relative;
     text-align: right;
     width: auto;
-    padding: 0 8px;
+    padding: 0 12px;
 	  
   }
-	
+
+ 
 	.cidadeinfo {
 	  
     position: relative;
